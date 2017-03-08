@@ -1,0 +1,32 @@
+Source: metlibs-tseries-tsdata
+Priority: optional
+Maintainer: Alexander Bürger <alexander.buerger@met.no>
+Build-Depends:  debhelper (>= 9), pkg-config,
+ autoconf (>=2.61), automake (>= 1.11), libtool (>= 1.5),
+ metlibs-milogger-dev (>= 5.0.0),
+ metlibs-puctools-dev (>= 5.0.0),
+ metlibs-putools-dev (>= 5.0.0),
+ metlibs-pudatatypes-dev (>= 5.0.0),
+ metlibs-pumet-dev (>= 5.1.0),
+ libcurl-dev, libqt4-dev,
+ libboost-dev, libboost-date-time-dev,
+ libfimex-dev (>= 0.61.1),
+ libpqxx-dev | libpqxx3-dev,
+ libhdf4-dev
+Standards-Version: 3.9.2
+Section: libs
+
+Package: metlibs-tsdata-dev
+Section: libdevel
+Architecture: any
+Depends: metlibs-putools-dev (>= 5.0.0),
+ metlibs-pumet-dev (>= 5.1.0),
+ metlibs-pudatatypes-dev (>= 5.0.0),
+ libqt4-dev,
+ libboost-dev, libboost-date-time-dev,
+ libfimex-dev (>= 0.61.1),
+ libpqxx-dev | libpqxx3-dev,
+ libhdf4-dev,
+ ${misc:Depends}
+Description: pudatatypes.
+ metlibs pudatatypes.
